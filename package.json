@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "push": "git add . && git commit -m 'update' && git push",
     "dev": "next dev",
     "build": "next build && next export",
     "start": "serve out",
     "lint": "next lint",
-    "test": "jest --watch",
+    "test": "jest",
+    "jest": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "analyze": "ANALYZE=true npm run build"

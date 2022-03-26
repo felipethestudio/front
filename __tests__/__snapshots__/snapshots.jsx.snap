@@ -18,6 +18,11 @@ exports[`renders homepage unchanged 1`] = `
           Next.js!
         </a>
       </h1>
+      <a
+        href="/about"
+      >
+        Go to About Page
+      </a>
       <p
         class="description"
       >
