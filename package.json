@@ -10,7 +10,7 @@
     "lint": "next lint",
     "jest": "jest --watch",
     "cypress": "cypress open --config video=false",
-    "test": "jest && cypress run --config video=false",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "analyze": "ANALYZE=true npm run build"
