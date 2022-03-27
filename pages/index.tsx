@@ -3,10 +3,6 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  return { props: {} };
-};
-
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
