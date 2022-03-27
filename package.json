@@ -9,7 +9,7 @@
     "start": "serve out",
     "lint": "next lint",
     "jest": "jest --watch",
-    "cypress": "cypress open --config video=false",
+    "cypress": "cypress open",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
