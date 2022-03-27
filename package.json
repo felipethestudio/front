@@ -8,8 +8,9 @@
     "build": "next build && next export",
     "start": "serve out",
     "lint": "next lint",
-    "test": "jest",
     "jest": "jest --watch",
+    "cypress": "cypress open --config video=false",
+    "test": "jest && cypress run --config video=false",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "analyze": "ANALYZE=true npm run build"
@@ -34,6 +35,7 @@
     "@types/react": "17.0.43",
     "@types/react-dom": "17.0.14",
     "babel-loader": "^8.2.4",
+    "cypress": "^9.5.2",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.1",
     "eslint-plugin-storybook": "^0.5.7",
