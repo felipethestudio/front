@@ -3,7 +3,7 @@ import { GRAPHQL_QUERY } from "./example-queries";
 import { exampleStyle } from "./example-style";
 
 interface Props {
-  post: { __typename: string; id: string; title: string; description: string };
+  post: { id: string; title: string; description: string };
 }
 
 const ExamplePage = ({ post }: Props) => {
