@@ -42,8 +42,8 @@ jobs:
           step: start
           token: ${{ secrets.GITHUB_TOKEN }}
           env: release
-          #env: ${{ fromJSON('["Production", "Preview"]')[github.ref != 'refs/heads/main'] }}
-      # - uses: actions/checkout@v2
+          env: ${{ fromJSON('["Production", "Preview"]')[github.ref != 'refs/heads/main'] }}
+       - uses: actions/checkout@v2
 
       - uses: amondnet/vercel-action@v20
         with:
