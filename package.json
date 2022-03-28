@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "serve out",
-    "push": "git add . && git commit -m 'update' && git push",
+    "push": "git add . && git commit -m 'update' && git push -u origin develop",
     "lint": "next lint",
     "jest": "jest --watch",
     "test": "jest",
