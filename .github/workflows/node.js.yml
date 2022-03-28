@@ -31,5 +31,6 @@ jobs:
           CI: true
           NEXT_PUBLIC_GRAPHQL_API: https://graphqlzero.almansi.me/api
       - run: npm run test
+      - run: npm run test
       - name: Cypress run
         uses: cypress-io/github-action@v2

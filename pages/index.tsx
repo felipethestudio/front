@@ -16,8 +16,8 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <Link href={"/about"}>
-          <a>Go to About Page</a>
+        <Link href={"/graphql-page"}>
+          <a>Go to GraphQL Page</a>
         </Link>
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/index.tsx</code>

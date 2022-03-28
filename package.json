@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "push": "git add . && git commit -m 'update' && git push",
     "dev": "next dev",
     "build": "next build && next export",
     "start": "serve out",
+    "push": "git add . && git commit -m 'update' && git push",
     "lint": "next lint",
     "jest": "jest --watch",
-    "cypress": "cypress open",
     "test": "jest",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "sb": "start-storybook -p 6006 -s ./public",
+    "build-sb": "build-storybook -s ./public",
     "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
@@ -30,6 +31,8 @@
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-interactions": "^6.4.19",
     "@storybook/addon-links": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
     "@testing-library/jest-dom": "^5.16.3",
@@ -45,6 +48,8 @@
     "eslint-plugin-storybook": "^0.5.7",
     "jest": "^27.5.1",
     "serve": "^13.0.2",
-    "typescript": "4.6.3"
+    "storybook-addon-next": "^1.6.2",
+    "typescript": "4.6.3",
+    "webpack": "^5.70.0"
   }
 }
