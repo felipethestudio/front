@@ -41,8 +41,9 @@ jobs:
         with:
           step: start
           token: ${{ secrets.GITHUB_TOKEN }}
-          env: ${{ fromJSON('["Production", "Preview"]')[github.ref != 'refs/heads/main'] }}
-      - uses: actions/checkout@v2
+          env: release
+          #env: ${{ fromJSON('["Production", "Preview"]')[github.ref != 'refs/heads/main'] }}
+      # - uses: actions/checkout@v2
 
       - uses: amondnet/vercel-action@v20
         with:
@@ -54,7 +55,7 @@ jobs:
           working-directory: ./
 
       - name: update deployment status
-        uses: bobheadxi/deployments@v0.4.3
+        uses: bobheadxi/deployments@v1
         if: always()
         with:
           step: finish
